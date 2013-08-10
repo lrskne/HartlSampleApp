@@ -38,7 +38,8 @@ group :production do
 end
 
 group :development do
-  # gem 'better_errors' lbe, might have conflict with capybara?
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'sextant'
   gem 'meta_request'
 end
