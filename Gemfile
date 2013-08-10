@@ -1,6 +1,8 @@
 # lbe: totally modified to Hartl book pg 78
 # main points: added rspec-rails, and capybara, and pg
 #  along with some other minor changes
+# note: also went with rspec-rails '~>2.11'
+# to match Rails3 in Action book
 
 source 'https://rubygems.org'
 
@@ -10,7 +12,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3', '1.3.5'
-gem 'rspec-rails', '2.9.0'
+gem 'rspec-rails', '~>2.11'
 
 
 # Gems used only for assets and not required
