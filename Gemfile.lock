@@ -34,8 +34,8 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (2.0.0)
     builder (3.0.4)
-    callsite (0.0.11)
     capybara (1.1.2)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -69,10 +69,6 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.2.8)
-      callsite
-      rack-contrib
-      railties
     mime-types (1.23)
     mini_portile (0.5.1)
     multi_json (1.7.8)
@@ -83,8 +79,6 @@ GEM
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -129,8 +123,6 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
-    sextant (0.2.4)
-      rails (>= 3.2)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -156,14 +148,13 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bootstrap-sass (= 2.0.0)
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
   jquery-rails (= 2.0.2)
-  meta_request
   pg (= 0.12.2)
   rails (= 3.2.13)
   rspec-rails (~> 2.11)
   sass-rails (= 3.2.4)
-  sextant
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)

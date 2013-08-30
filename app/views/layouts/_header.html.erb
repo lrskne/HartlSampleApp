@@ -1,0 +1,21 @@
+  <header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <!-- instead of using the <a href... directly use the Rails helper link_to
+            option 1 - the link text option 2 - # is a way to stub out the URI until you have the
+            actual URI you want to put in the code, option 3 - the options hash, in this cas the CSS
+            id logo to the sample app link
+                    <%= link_to "sample app", '#', id: "logo" %>
+            -->
+
+              <%= link_to "sample app", '#', id: "logo" %>
+              <nav>
+                <ul class="nav pull-right">
+                  <li><%= link_to "Home",     '#' %></li>
+                  <li><%= link_to "Help",     '#' %></li>
+                  <li><%= link_to "Sign in",  '#' %></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+  </header>

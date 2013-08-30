@@ -7,6 +7,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+# this installs Twitter boostrap framework, but th -sass converts the
+# Twitter default framework ( LESS CSS) to what rails needs wich is Sass
+gem 'bootstrap-sass', '2.0.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -40,8 +43,8 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'sextant'
-  gem 'meta_request'
+  #gem 'sextant'
+  #gem 'meta_request'
 end
 
 # To use ActiveModel has_secure_password
