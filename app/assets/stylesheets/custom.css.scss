@@ -22,9 +22,12 @@ section {
 textarea {
   resize: vertical;
 }
-
+/* sass allows nesting of these .center rulse
 .center {
   text-align: center;
+  h1 {
+  margin-bottom: 10px;
+}
 }
 
 .center h1 {
