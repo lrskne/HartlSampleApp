@@ -5,6 +5,28 @@ below to customize Twitter bootstrap. lbelater - where it the import
 bootstrap stored for you to be able to import it?
 */
 
+/* There are a lot of changes that can be done to convert the css
+into scss. Note that you do not HAVE to make the changes and this
+custom.css.scss file can have pure css syntax and still work!
+I have put the old code at the bottom for easy comparison
+*/
+
+/* mixins, variables, etc. */
+/* sass allows use of a variable name, for example replace
+Also made changes below where the color #999 was referred to
+but Twitter Bootstrap framework defines variables for colors, available online
+on the Bootstrap page of LESS variables. (Google Twitter Boostrap variables
+or look at this link: http://bootstrap.lesscss.ru/less.html. This is for the
+LESS version of bootstrap vs the SCSS version, but all you need to do is
+replace the @xxxx variable name with $xxxx)
+So with css in all of the code below it used #fff, but you can instead
+use $white
+*/
+
+
+$grayMediumLight: #eaeaea;
+
+
 /* universal */
 
 html {
@@ -27,12 +49,9 @@ textarea {
   text-align: center;
   h1 {
   margin-bottom: 10px;
-}
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
 /* typography */
 
@@ -53,7 +72,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999
+  color: $grayLight
 }
 
 p {
@@ -73,35 +92,38 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
-}
-
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
 }
 
 /* footer */
+/* major consOlidation over css, able to nest the a
+footer, USE $xxx colors instead of #number colors (e.g.
+$gray in place of #555)
+*/
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
-}
+  color: $grayLight;
+  a {
+    color: $gray;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
 
-footer a {
-  color: #555
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }
